@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Col } from 'react-bootstrap'
+import { Container, Col, Breadcrumb } from 'react-bootstrap'
 import { Image, RichText, Date } from 'prismic-reactjs'
 import Moment from 'moment'
 import { client } from '../../prismic-configuration'
@@ -12,6 +12,10 @@ const Post = props =>{
   return (
     <Layout>
     <Container className="mt-5">
+      <Breadcrumb>
+        <Breadcrumb.Item href="/blog">Blog</Breadcrumb.Item>
+        <Breadcrumb.Item active>{RichText.render(props.post.data.title)}</Breadcrumb.Item>
+      </Breadcrumb>
       <Col className="mx-auto" md={8}>
       {RichText.render(props.post.data.title)}
       <small className="text-muted">{formattedDate}</small>

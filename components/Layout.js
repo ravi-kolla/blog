@@ -14,6 +14,7 @@ const Layout = props => (
         <meta name="google-site-verification" content="UyXO3DXkxKwbW_0Nv95_D2uTrZ8q7YueIv2BGoKFquM" />
         <meta name="msvalidate.01" content="CF297ABC958C453AD2974C80FF42CCD4" />
         <title>Ravi Teja Kolla</title>
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
       </Head>
       <Header />
       <Container>

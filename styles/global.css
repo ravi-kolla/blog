@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 pre {
@@ -44,4 +44,11 @@ img {
 }
 .blog-image {
   height: 230px;
+}
+.breadcrumb {
+  background-color: #fff;
+}
+.breadcrumb-item h1 {
+  font-size: 18px;
+  line-height: unset;
 }

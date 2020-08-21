@@ -15,10 +15,10 @@ const Home = props => (
       </div>
       <Row className="mt-5">
       <Container>
-        <h5>My Projects</h5>
+        <h5>Projects</h5>
       </Container>
       {props.projects.results.map(project => (
-        <Col key={project.uid} md={4} className="mt-3">
+        <Col key={project.uid} md={6} lg={4} className="mt-3">
           <Card>
             <Card.Img src={project.data.image.url} alt={project.data.image.alt} />
             <Card.Body>
@@ -44,7 +44,7 @@ const Home = props => (
         const date = Date(post.data.date);
         const formattedDate = Moment(date).format("LL");
         return (
-          <Col key={post.uid} md={4} className="mt-3">
+          <Col key={post.uid} md={6} lg={4} className="mt-3">
             <Card>
               <Card.Img className="blog-image" variant="top" src={post.data.image.url} alt={post.data.image.alt} />
               <Card.Body>

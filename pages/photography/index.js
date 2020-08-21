@@ -10,7 +10,7 @@ const Album = props => (
     <Layout>
     <Row>
     {props.photos.results.map(photography => (
-      <Col key={photography.uid} md={4} className="mt-3">
+      <Col key={photography.uid} md={6} lg={4} className="mt-3">
         <Link href={hrefResolver(photography)} as={linkResolver(photography)} passHref>
         <a>
         <Card>

@@ -15,7 +15,7 @@ const Blog = props => (
       const date = Date(post.data.date);
       const formattedDate = Moment(date).format("LL");
       return (
-        <Col key={post.uid} md={4} className="mt-3">
+        <Col key={post.uid} md={6} lg={4} className="mt-3">
           <Card>
             <Card.Img className="blog-image" variant="top" src={post.data.image.url} alt={post.data.image.alt} />
             <Card.Body>
