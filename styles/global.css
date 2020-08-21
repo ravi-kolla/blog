@@ -48,7 +48,8 @@ img {
 .breadcrumb {
   background-color: #fff;
 }
-.breadcrumb-item h1 {
+.breadcrumb-item h1,
+.breadcrumb-item h2 {
   font-size: 18px;
   line-height: unset;
 }
