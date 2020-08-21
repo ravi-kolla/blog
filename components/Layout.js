@@ -15,6 +15,7 @@ const Layout = props => (
         <meta name="msvalidate.01" content="CF297ABC958C453AD2974C80FF42CCD4" />
         <title>Ravi Teja Kolla</title>
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <script data-ad-client="ca-pub-4737001282920677" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       </Head>
       <Header />
       <Container>
