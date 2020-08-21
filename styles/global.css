@@ -1,0 +1,47 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Rubik, sans-serif',  -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  background-color: #fff;
+  color: #111;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+pre {
+  background: #1d2230;
+    padding: 10px 12px;
+    color: #fff;
+    border-radius: 4px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+.header {
+  box-shadow: 0 5px 10px rgba(0,0,0,0.12);
+  background-color: #fff;
+}
+
+.block-img {
+  text-align: -webkit-center;
+  margin-top: 20px;
+}
+.blog-image {
+  height: 230px;
+}
