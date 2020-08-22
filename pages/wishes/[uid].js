@@ -14,9 +14,11 @@ const Wishes = props =>{
       <div className="mt-2 mb-3">
       <img className="mx-auto" src={props.wishes.data.image.url} alt={props.wishes.data.image.alt} />
       </div>
-      <div>
+      <Container>
+      <Col md={10} className="mx-auto">
       {RichText.render(props.wishes.data.body)}
-      </div>
+      </Col>
+      </Container>
       </Col>
     </div>
     </Layout>
