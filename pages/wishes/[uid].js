@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import { Container, Col } from 'react-bootstrap'
 import { Image, RichText, Date } from 'prismic-reactjs'
 import { client } from '../../prismic-configuration'
@@ -8,6 +9,9 @@ import Layout from '../../components/Layout'
 const Wishes = props =>{
   return (
     <Layout>
+    <Head>
+      <meta name="description" content={props.wishes.data.image.alt} />
+    </Head>
     <div className="mt-5">
       <Col>
       {RichText.render(props.wishes.data.title)}
