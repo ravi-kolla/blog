@@ -15,6 +15,42 @@ const Home = props => (
       </div>
       <Row className="mt-5">
       <Container>
+        <h5>Latest Blog Posts</h5>
+      </Container>
+      {props.latestPosts.results.slice(0, 2).map(post => {
+        const date = Date(post.data.date);
+        const formattedDate = Moment(date).format("LL");
+        return (
+          <Col key={post.uid} md={6} lg={4} className="mt-3">
+            <Card className="blog-card">
+              <Link href={hrefResolver(post)} as={linkResolver(post)} passHref>
+                <a>
+                  <Card.Img className="blog-image" variant="top" src={post.data.image.url} alt={post.data.image.alt} />
+                  <Card.Body>
+                    <Card.Text>
+                      <small className="text-muted">{formattedDate}</small>
+                      <h6>
+                      {post.data.image.alt}
+                      </h6>
+                      {RichText.render(post.data.description)}
+                    </Card.Text>
+                  </Card.Body>
+                </a>
+              </Link>
+            </Card>
+          </Col>
+        )
+      })}
+      <Col md={4} className="d-flex mt-3 align-items-end">
+        <Link href="/blog">
+          <a>
+            <Button variant="primary">View More posts</Button>
+          </a>
+        </Link>
+      </Col>
+      </Row>
+      <Row className="mt-5">
+      <Container>
         <h5>Projects</h5>
       </Container>
       {props.projects.results.map(project => (
@@ -35,39 +71,6 @@ const Home = props => (
           </Card>
         </Col>
       ))}
-      </Row>
-      <Row className="mt-5">
-      <Container>
-        <h5>Latest Blog Posts</h5>
-      </Container>
-      {props.latestPosts.results.slice(0, 2).map(post => {
-        const date = Date(post.data.date);
-        const formattedDate = Moment(date).format("LL");
-        return (
-          <Col key={post.uid} md={6} lg={4} className="mt-3">
-            <Card>
-              <Card.Img className="blog-image" variant="top" src={post.data.image.url} alt={post.data.image.alt} />
-              <Card.Body>
-                <Card.Text>
-                  <small className="text-muted">{formattedDate}</small>
-                  <p>
-                  <Link href={hrefResolver(post)} as={linkResolver(post)} passHref>
-                    <a className="card-link">{post.data.image.alt}</a>
-                  </Link>
-                  </p>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-        )
-      })}
-      <Col md={4} className="d-flex mt-3 align-items-center">
-        <Link href="/blog">
-          <a>
-            <Button variant="primary">View More posts</Button>
-          </a>
-        </Link>
-      </Col>
       </Row>
     </Layout>
 )

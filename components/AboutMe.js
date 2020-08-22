@@ -14,7 +14,7 @@ const AboutMe = () => (
       </div>
     </Col>
     <Col xs={12} md={4} lg={3}>
-      <Image src="/ravitejakolla.jpg" rounded />
+      <Image className="author-pic" src="/ravitejakolla.jpg" rounded />
     </Col>
   </Row>
 </Container>

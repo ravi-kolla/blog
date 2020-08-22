@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import Prismic from 'prismic-javascript'
 import { RichText, Date, Image } from 'prismic-reactjs'
 import { client, linkResolver, hrefResolver } from '../../prismic-configuration'
@@ -8,6 +9,9 @@ import Layout from '../../components/Layout'
 
 const Photo = props => (
     <Layout>
+    <Head>
+      <meta name="description" content={props.photo.data.image.alt} />
+    </Head>
     <Container>
     <Row>
       <Col className="mt-3">

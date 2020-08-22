@@ -16,18 +16,21 @@ const Blog = props => (
       const formattedDate = Moment(date).format("LL");
       return (
         <Col key={post.uid} md={6} lg={4} className="mt-3">
-          <Card>
-            <Card.Img className="blog-image" variant="top" src={post.data.image.url} alt={post.data.image.alt} />
-            <Card.Body>
-              <Card.Text>
-                <small className="text-muted">{formattedDate}</small>
-                <p>
-                <Link href={hrefResolver(post)} as={linkResolver(post)} passHref>
-                  <a className="card-link">{post.data.image.alt}</a>
-                </Link>
-                </p>
-              </Card.Text>
-            </Card.Body>
+          <Card className="blog-card">
+            <Link href={hrefResolver(post)} as={linkResolver(post)} passHref>
+            <a>
+              <Card.Img className="blog-image" variant="top" src={post.data.image.url} alt={post.data.image.alt} />
+              <Card.Body>
+                <Card.Text>
+                  <small className="text-muted">{formattedDate}</small>
+                  <h6>
+                  {post.data.image.alt}
+                  </h6>
+                  {RichText.render(post.data.description)}
+                </Card.Text>
+              </Card.Body>
+            </a>
+            </Link>
           </Card>
         </Col>
       )
