@@ -1,6 +1,7 @@
 import React from 'react'
 import { Col, Row, Jumbotron, Container } from 'react-bootstrap'
 import Layout from '../components/Layout'
+import Subscribe from '../components/Subscribe'
 
 const Connect = () => (
   <Layout>
@@ -16,6 +17,11 @@ const Connect = () => (
           <p>
           <a href="https://www.linkedin.com/in/ravitejakolla">LinkedIn</a> / <a href="https://github.com/ravi-kolla">GitHub</a> / Email: <a href="mailto:ravi.kolla@outlook.com">ravi.kolla@outlook.com</a>
           </p>
+        </Row>
+      </Container>
+      <Container>
+        <Row>
+          <Subscribe />
         </Row>
       </Container>
     </Jumbotron>

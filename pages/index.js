@@ -7,15 +7,19 @@ import {Container, Row, Col, Card, Button} from 'react-bootstrap'
 import Link from 'next/link'
 import Layout from '../components/Layout'
 import AboutMe from '../components/AboutMe'
+import Subscribe from '../components/Subscribe'
 
 const Home = props => (
     <Layout>
-      <div>
-        <AboutMe />
-      </div>
+      <AboutMe />
       <Row className="mt-5">
       <Container>
+        <div className="pl-0">
         <h5>Latest Blog Posts</h5>
+        <div className="subscribe-container">
+        <Subscribe />
+        </div>
+        </div>
       </Container>
       {props.latestPosts.results.slice(0, 2).map(post => {
         const date = Date(post.data.date);
@@ -29,9 +33,9 @@ const Home = props => (
                   <Card.Body>
                     <Card.Text>
                       <small className="text-muted">{formattedDate}</small>
-                      <h6>
+                      <p className="card-title">
                       {post.data.image.alt}
-                      </h6>
+                      </p>
                       {RichText.render(post.data.description)}
                     </Card.Text>
                   </Card.Body>

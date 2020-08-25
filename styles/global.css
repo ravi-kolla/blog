@@ -64,6 +64,15 @@ iframe {
   border-color: rgb(234, 234, 234);
   transition: border 0.2s ease 0s, box-shadow 0.2s ease 0s;
 }
+.card-title {
+  font-size: 1rem;
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.blog-page .breadcrumb {
+  padding-left: 4px;
+}
 .blog-card:hover {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 12px;
     text-decoration: none;
@@ -74,6 +83,9 @@ iframe {
 }
 .blog-card a:hover {
   color: #000;
+}
+.subscribe-container {
+  width: fit-content;
 }
 @media screen and (max-width: 991px) {
   .blog-post h1 {

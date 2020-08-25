@@ -1,11 +1,12 @@
 import React from 'react'
 import Head from 'next/head'
-import { Container, Col, Breadcrumb } from 'react-bootstrap'
+import { Container, Row, Col, Breadcrumb } from 'react-bootstrap'
 import { Image, RichText, Date } from 'prismic-reactjs'
 import Moment from 'moment'
 import { client } from '../../prismic-configuration'
 import Link from 'next/link'
 import Layout from '../../components/Layout'
+import Subscribe from '../../components/Subscribe'
 
 const Post = props =>{
   const date = Date(props.post.data.date);
@@ -30,6 +31,13 @@ const Post = props =>{
       {RichText.render(props.post.data.post_body)}
       </div>
       </Col>
+    </Container>
+    <Container className="mt-3">
+    <Row>
+    <div className="m-auto">
+    <Subscribe />
+    </div>
+    </Row>
     </Container>
     </Layout>
   )

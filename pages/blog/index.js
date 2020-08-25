@@ -1,15 +1,20 @@
 import React from 'react'
 import Prismic from 'prismic-javascript'
 import { Image, RichText, Date } from 'prismic-reactjs'
-import {Row, Col, Card} from 'react-bootstrap'
+import {Container, Row, Col, Card, Breadcrumb} from 'react-bootstrap'
 import Moment from 'moment'
 import { client, linkResolver, hrefResolver } from '../../prismic-configuration'
 import Link from 'next/link'
 import Layout from '../../components/Layout'
+import Subscribe from '../../components/Subscribe'
 import Album from '../photography'
 
 const Blog = props => (
     <Layout>
+    <Breadcrumb className="blog-page mt-5">
+      <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+      <Breadcrumb.Item active>Blog</Breadcrumb.Item>
+    </Breadcrumb>
     <Row className="mt-2">
     {props.posts.results.map(post => {
       const date = Date(post.data.date);
@@ -23,9 +28,9 @@ const Blog = props => (
               <Card.Body>
                 <Card.Text>
                   <small className="text-muted">{formattedDate}</small>
-                  <h6>
+                  <p className="card-title">
                   {post.data.image.alt}
-                  </h6>
+                  </p>
                   {RichText.render(post.data.description)}
                 </Card.Text>
               </Card.Body>
@@ -37,6 +42,13 @@ const Blog = props => (
     }
     )}
     </Row>
+    <Container className="mt-3">
+    <Row>
+    <div className="m-auto">
+    <Subscribe />
+    </div>
+    </Row>
+    </Container>
     </Layout>
 )
 

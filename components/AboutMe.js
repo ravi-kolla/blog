@@ -2,7 +2,7 @@ import React from 'react'
 import {Container, Row, Col, Image} from 'react-bootstrap'
 
 const AboutMe = () => (
-  <Container className="mt-5">
+  <div className="mt-5">
   <Row>
     <Col xs={12} md={8}>
       <div>
@@ -17,7 +17,7 @@ const AboutMe = () => (
       <Image className="author-pic" src="/ravitejakolla.jpg" rounded />
     </Col>
   </Row>
-</Container>
+</div>
 )
 
 export default AboutMe;
