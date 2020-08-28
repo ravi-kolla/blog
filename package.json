@@ -24,6 +24,7 @@
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
+    "dotenv-webpack": "^2.0.0",
     "now": "^15.5.0"
   }
 }

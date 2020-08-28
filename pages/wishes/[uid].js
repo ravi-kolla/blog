@@ -10,7 +10,7 @@ const Wishes = props =>{
   return (
     <Layout>
     <Head>
-      <meta name="description" content={props.wishes.data.image.alt} />
+      <meta name="description" content={`${props.wishes.data.image.alt} from Ravi Teja Kolla`} />
     </Head>
     <div className="mt-5">
       <Col>

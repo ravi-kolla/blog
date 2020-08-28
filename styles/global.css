@@ -87,6 +87,9 @@ iframe {
 .subscribe-container {
   width: fit-content;
 }
+.fb-share-button span {
+  vertical-align:baseline !important;
+}
 @media screen and (max-width: 991px) {
   .blog-post h1 {
     font-size: 1.25rem;
