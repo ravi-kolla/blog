@@ -49,8 +49,12 @@ const Post = props =>{
       </Col>
     </Container>
     <Container className="mt-3">
-    <Row>
-    <div className="m-auto">
+    <Row className="container">
+    <div className="container col-md-8 m-auto pl-3 pr-3">
+    <Social dataText={props.post.data.image.alt}
+            dataUid={props.post.uid}
+            imageAlt={props.post.data.image.alt}
+    />
     <Subscribe />
     </div>
     </Row>
