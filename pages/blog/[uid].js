@@ -18,8 +18,8 @@ const Post = props =>{
       <meta name="description" content={`${props.post.data.image.alt} by Ravi Teja Kolla`} />
       <meta property="og:url"           content={`https://ravitejakolla.com/blog/${props.post.uid}`} />
       <meta property="og:type"          content="website" />
-      <meta property="og:title"         content={`{props.post.uid} by Ravi Teja Kolla`} />
-      <meta property="og:description"   content="Your description" />
+      <meta property="og:title"         content={`${props.post.uid} by Ravi Teja Kolla`} />
+      <meta property="og:description"   content={props.post.data.description} />
       <meta property="og:image"         content={props.post.data.image.url} />
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       <script async src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0" charset="utf-8"></script>
