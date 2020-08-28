@@ -10,8 +10,8 @@ const Wishes = props =>{
   return (
     <Layout>
     <Head>
-      <meta name="author" content={`${props.wishes.data.image.alt} from Ravi Teja Kolla`} />
-      <meta name="description" content={props.wishes.data.body} />
+      <meta name="author" content={`${props.wishes.data.image.alt} Wishes`} />
+      <meta name="description" content="From Ravi Teja Kolla" />
     </Head>
     <div className="mt-5">
       <Col>
