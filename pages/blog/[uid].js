@@ -18,7 +18,7 @@ const Post = props =>{
       <meta name="description" content={`${props.post.data.image.alt} by Ravi Teja Kolla`} />
       <meta property="og:url"           content={`https://ravitejakolla.com/blog/${props.post.uid}`} />
       <meta property="og:type"          content="website" />
-      <meta property="og:title"         content={`${props.post.title} Article`} />
+      <meta property="og:title"         content={`Article on ${props.post.data.image.alt}`} />
       <meta property="og:description"   content="By Ravi Teja Kolla" />
       <meta property="og:image"         content={props.post.data.image.url} />
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
