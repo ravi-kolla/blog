@@ -24,7 +24,7 @@ export const linkResolver = (doc) => {
 // Additional helper function for Next/Link components
 export const hrefResolver = (doc) => {
   if (doc.type === 'photography') {
-    return `/photography?uid=${doc.uid}`
+    return `/photography/${doc.uid}`
   } else if (doc.type === 'post') {
     return `/post?uid=${doc.uid}`
   }
