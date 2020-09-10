@@ -19,9 +19,7 @@ const Layout = props => (
         <script data-ad-client="ca-pub-4737001282920677" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       </Head>
       <Header />
-      <Container>
       {props.children}
-      </Container>
       <Footer />
   </>
 )

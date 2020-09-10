@@ -11,6 +11,7 @@ import Album from '../photography'
 
 const Blog = props => (
     <Layout>
+    <Container>
     <Breadcrumb className="blog-page mt-5">
       <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
       <Breadcrumb.Item active>Blog</Breadcrumb.Item>
@@ -41,12 +42,6 @@ const Blog = props => (
       )
     }
     )}
-    </Row>
-    <Container className="mt-3">
-    <Row>
-    <div className="m-auto">
-    <Subscribe />
-    </div>
     </Row>
     </Container>
     </Layout>

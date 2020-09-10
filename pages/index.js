@@ -11,17 +11,19 @@ import Subscribe from '../components/Subscribe'
 
 const Home = props => (
     <Layout>
+      <section className="aboutme-section">
+      <Container className="pt-5 pb-5">
       <AboutMe />
+      </Container>
+      </section>
+      <Container>
       <Row className="mt-5">
       <Container>
         <div className="pl-0">
-        <h5>Latest Blog Posts</h5>
-        <div className="subscribe-container">
-        <Subscribe />
-        </div>
+        <h5>Recent Posts</h5>
         </div>
       </Container>
-      {props.latestPosts.results.slice(0, 2).map(post => {
+      {props.latestPosts.results.slice(0, 3).map(post => {
         const date = Date(post.data.date);
         const formattedDate = Moment(date).format("LL");
         return (
@@ -45,14 +47,16 @@ const Home = props => (
           </Col>
         )
       })}
-      <Col md={4} className="d-flex mt-3 align-items-end">
-        <Link href="/blog">
-          <a>
-            <Button variant="primary">View More posts</Button>
-          </a>
-        </Link>
-      </Col>
       </Row>
+      <div className="mt-3">
+      <Link href="/blog">
+        <a>
+          <Button variant="primary">View all blog posts</Button>
+        </a>
+      </Link>
+      </div>
+      </Container>
+      <Container>
       <Row className="mt-5">
       <Container>
         <h5>Projects</h5>
@@ -76,6 +80,7 @@ const Home = props => (
         </Col>
       ))}
       </Row>
+      </Container>
     </Layout>
 )
 

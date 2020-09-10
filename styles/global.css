@@ -39,7 +39,19 @@ iframe {
   box-shadow: 0 5px 10px rgba(0,0,0,0.12);
   background-color: #fff;
 }
+.footer,
+.footer a {
+  color: #fff;
+}
+.aboutme-section,
+.footer {
+  background: linear-gradient(306deg,rgba(54,54,54,.05),rgba(54,54,54,.05) 33.333%,rgba(85,85,85,.05) 0,rgba(85,85,85,.05) 66.666%,hsla(0,0%,100%,.05) 0,hsla(0,0%,100%,.05) 99.999%),linear-gradient(353deg,rgba(81,81,81,.05),rgba(81,81,81,.05) 33.333%,hsla(0,0%,93.3%,.05) 0,hsla(0,0%,93.3%,.05) 66.666%,rgba(32,32,32,.05) 0,rgba(32,32,32,.05) 99.999%),linear-gradient(140deg,hsla(0,0%,75.3%,.05),hsla(0,0%,75.3%,.05) 33.333%,hsla(0,0%,42.7%,.05) 0,hsla(0,0%,42.7%,.05) 66.666%,rgba(30,30,30,.05) 0,rgba(30,30,30,.05) 99.999%),linear-gradient(189deg,rgba(77,77,77,.05),rgba(77,77,77,.05) 33.333%,rgba(55,55,55,.05) 0,rgba(55,55,55,.05) 66.666%,hsla(0,0%,56.9%,.05) 0,hsla(0,0%,56.9%,.05) 99.999%),linear-gradient(90deg,#09c9ba,#1283dd);
+}
 
+.author-pic {
+  height: 250px;
+  width: 250px;
+}
 .block-img {
   text-align: -webkit-center;
   margin-top: 20px;

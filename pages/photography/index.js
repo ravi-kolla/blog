@@ -2,12 +2,13 @@ import React from 'react'
 import Prismic from 'prismic-javascript'
 import { RichText, Date, Image } from 'prismic-reactjs'
 import { client, linkResolver, hrefResolver } from '../../prismic-configuration'
-import {Row, Col, Card} from 'react-bootstrap'
+import {Row, Col, Card, Container} from 'react-bootstrap'
 import Link from 'next/link'
 import Layout from '../../components/Layout'
 
 const Album = props => (
     <Layout>
+    <Container>
     <Row>
     {props.photos.results.map(photography => (
       <Col key={photography.uid} md={6} lg={4} className="mt-3">
@@ -21,6 +22,7 @@ const Album = props => (
       </Col>
     ))}
     </Row>
+    </Container>
     </Layout>
 )
 

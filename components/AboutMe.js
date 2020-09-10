@@ -2,9 +2,9 @@ import React from 'react'
 import {Container, Row, Col, Image} from 'react-bootstrap'
 
 const AboutMe = () => (
-  <div className="mt-5">
-  <Row>
-    <Col xs={12} md={8}>
+  <div className="author card pt-4 pb-4 pl-5 pr-5 bg-white">
+  <Row className="flex align-items-center justify-content-around flex-column-reverse flex-md-row">
+    <Col md={8}>
       <div>
       <div>
         <h1>Hey, I’m Ravi.</h1>
@@ -13,8 +13,8 @@ const AboutMe = () => (
       <p>Experienced in developing full-stack web applications.</p>
       </div>
     </Col>
-    <Col xs={12} md={4} lg={3}>
-      <Image className="author-pic" src="/ravitejakolla.jpg" rounded />
+    <Col md={4} className="pb-3 pb-md-0">
+      <Image className="author-pic m-auto" src="/ravitejakolla.jpg" roundedCircle />
     </Col>
   </Row>
 </div>

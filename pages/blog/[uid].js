@@ -55,7 +55,6 @@ const Post = props =>{
             dataUid={props.post.uid}
             imageAlt={props.post.data.image.alt}
     />
-    <Subscribe />
     </div>
     </Row>
     </Container>

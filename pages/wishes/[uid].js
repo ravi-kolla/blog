@@ -13,6 +13,7 @@ const Wishes = props =>{
       <title>{`${props.wishes.data.image.alt} Wishes`}</title>
       <meta name="description" content="From Ravi Teja Kolla" />
     </Head>
+    <Container>
     <div className="mt-5">
       <Col>
       {RichText.render(props.wishes.data.title)}
@@ -26,6 +27,7 @@ const Wishes = props =>{
       </Container>
       </Col>
     </div>
+    </Container>
     </Layout>
   )
 }
