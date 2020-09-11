@@ -1,7 +1,7 @@
 {
-  "name": "prismic-next-blog",
+  "name": "ravi-teja-blog",
   "version": "1.0.0",
-  "description": "Guide code for building a simple blog that uses Prismic+Next+Now",
+  "description": "Ravi Teja Kolla blog built on Prismic+Next+Now",
   "main": "index.js",
   "scripts": {
     "dev": "next",
@@ -12,7 +12,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-regular-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
     "@statickit/react": "^2.1.1",
+    "@zeit/next-css": "^1.0.1",
     "axios": "^0.20.0",
     "bootstrap": "^4.5.2",
     "moment": "^2.27.0",

@@ -1,7 +1,9 @@
 import React from 'react'
 import { Col, Row, Jumbotron, Container } from 'react-bootstrap'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Layout from '../components/Layout'
 import Subscribe from '../components/Subscribe'
+import SocialConnectIcons from '../components/SocialConnectIcons'
 
 const Connect = () => (
   <Layout>
@@ -12,12 +14,8 @@ const Connect = () => (
       <p>
         I would love to hear from you.
       </p>
-      <Container>
-        <Row>
-          <p>
-          <a href="https://www.linkedin.com/in/ravitejakolla">LinkedIn</a> / <a href="https://github.com/ravi-kolla">GitHub</a> / Email: <a href="mailto:ravi.kolla@outlook.com">ravi.kolla@outlook.com</a>
-          </p>
-        </Row>
+      <Container className="mb-3">
+        <SocialConnectIcons />
       </Container>
       <Container>
         <Row>

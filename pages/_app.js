@@ -1,11 +1,15 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../styles/global.css'
-import { StaticKitProvider } from '@statickit/react';
+import { config, library } from '@fortawesome/fontawesome-svg-core'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
+
+library.add(fab, faEnvelope)
 
 export default function App({ Component, pageProps }) {
   return (
-    <StaticKitProvider site="6620fd8516ee">
-      <Component {...pageProps} />
-    </StaticKitProvider>
+    <Component {...pageProps} />
   )
 }

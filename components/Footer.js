@@ -1,6 +1,7 @@
 import { Navbar, Container, Nav, Row, Col } from 'react-bootstrap'
 import Link from 'next/link'
 import Subscribe from './Subscribe'
+import SocialConnectIcons from './SocialConnectIcons'
 
 const Footer = () => (
   <div className="footer mt-5">
@@ -32,11 +33,18 @@ const Footer = () => (
     </div>
     </Col>
   </Row>
+  <Container>
+  <Row className="flex align-items-center">
+  <div className="col-md-6 mb-3 mt-3">
+  <SocialConnectIcons />
+  </div>
+  <div className="col-md-6">
   <Row>
-  <div class="col-md-4 offset-md-8">
-  <small>Copyright © 2020 Ravi Teja Kolla</small>
+  <small className="m-md-auto">Copyright © 2017 - 2020 Ravi Teja Kolla</small>
+  </Row>
   </div>
   </Row>
+  </Container>
   </Container>
   </div>
 )
