@@ -3,6 +3,7 @@ import Prismic from 'prismic-javascript'
 import { RichText, Date } from 'prismic-reactjs'
 import Moment from 'moment'
 import { client, linkResolver, hrefResolver } from '../prismic-configuration'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {Container, Row, Col, Card, Button} from 'react-bootstrap'
 import Link from 'next/link'
 import Layout from '../components/Layout'
@@ -51,7 +52,7 @@ const Home = props => (
       <div className="mt-3">
       <Link href="/blog">
         <a>
-          <Button variant="primary">View all blog posts</Button>
+          <Button variant="primary">View all blog posts <FontAwesomeIcon icon="chevron-right" size="md" /></Button>
         </a>
       </Link>
       </div>

@@ -11,6 +11,7 @@ import Social from '../../components/Social'
 const Photo = props => (
     <Layout>
     <Head>
+      <title>{`${props.photo.data.image.alt} | by Ravi Teja Kolla`}</title>
       <meta name="description" content={`${props.photo.data.image.alt} photo by Ravi Teja Kolla`} />
       <meta property="og:url"           content={`https://ravitejakolla.com/blog/${props.photo.uid}`} />
       <meta property="og:type"          content="website" />

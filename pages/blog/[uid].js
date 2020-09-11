@@ -15,7 +15,10 @@ const Post = props =>{
   return (
     <Layout>
     <Head>
-      <meta name="description" content={`${props.post.data.image.alt} by Ravi Teja Kolla`} />
+      <title>{`${props.post.data.image.alt} | by Ravi Teja Kolla | ${formattedDate}`}</title>
+      <meta name="title" content={`${props.post.data.image.alt} | by Ravi Teja Kolla | ${formattedDate}`} />
+      <meta name="keywords" content={`${props.post.data.image.alt}, ${props.post.data.image.alt} by Ravi Teja Kolla, Ravi Teja,Ravi Teja Kolla,Ravi Teja Blog,Raviteja Portfolio,Kolla`} />
+      <meta name="description" content={`Article on ${props.post.data.image.alt} | by Ravi Teja Kolla | ${formattedDate}`} />
       <meta property="og:url"           content={`https://ravitejakolla.com/blog/${props.post.uid}`} />
       <meta property="og:type"          content="website" />
       <meta property="og:title"         content={`Article on ${props.post.data.image.alt}`} />
