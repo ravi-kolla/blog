@@ -4,7 +4,7 @@ import { RichText, Date } from 'prismic-reactjs'
 import Moment from 'moment'
 import { client, linkResolver, hrefResolver } from '../prismic-configuration'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {Container, Row, Col, Card, Button} from 'react-bootstrap'
+import {Container, Row, Col, Card, Button, Badge} from 'react-bootstrap'
 import Link from 'next/link'
 import Layout from '../components/Layout'
 import AboutMe from '../components/AboutMe'
@@ -38,6 +38,13 @@ const Home = props => (
                       <small className="text-muted">{formattedDate}</small>
                       <p className="card-title">
                       {post.data.image.alt}
+                      </p>
+                      <p>
+                      {post.tags.map(tag => {
+                        return (
+                          <Badge className="mr-1" key={tag} pill variant="success">{tag}</Badge>
+                        );
+                      })}
                       </p>
                       {RichText.render(post.data.description)}
                     </Card.Text>

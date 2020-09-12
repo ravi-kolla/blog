@@ -11,10 +11,10 @@ const SocialConnectIcons = () => (
       <a href="https://www.linkedin.com/in/ravitejakolla"><FontAwesomeIcon icon={["fab", "linkedin"]} size="2x" /></a>
       </div>
       <div className="pr-3">
-      <a classname="pr-3" href="https://github.com/ravi-kolla"><FontAwesomeIcon icon={["fab", "github"]} size="2x" /></a>
+      <a className="pr-3" href="https://github.com/ravi-kolla"><FontAwesomeIcon icon={["fab", "github"]} size="2x" /></a>
       </div>
       <div className="pr-3">
-      <a classname="pr-3" href="https://twitter.com/ravitejakolla"><FontAwesomeIcon icon={["fab", "twitter"]} size="2x" /></a>
+      <a className="pr-3" href="https://twitter.com/ravitejakolla"><FontAwesomeIcon icon={["fab", "twitter"]} size="2x" /></a>
       </div>
     </Row>
 )

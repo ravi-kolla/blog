@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import { Container, Row, Col, Breadcrumb } from 'react-bootstrap'
+import { Container, Row, Col, Breadcrumb, Badge } from 'react-bootstrap'
 import { Image, RichText, Date } from 'prismic-reactjs'
 import Moment from 'moment'
 import { client } from '../../prismic-configuration'
@@ -37,6 +37,13 @@ const Post = props =>{
       <Col className="mx-auto blog-post" md={8}>
       <Row className="pl-3 pr-3 justify-content-between align-items-center">
         {RichText.render(props.post.data.title)}
+        <p>
+        {props.post.tags.map(tag => {
+          return (
+            <Badge className="mr-1" key={tag} pill variant="success">{tag}</Badge>
+          );
+        })}
+        </p>
         <Social dataText={props.post.data.image.alt}
                 dataUid={props.post.uid}
                 imageAlt={props.post.data.image.alt}

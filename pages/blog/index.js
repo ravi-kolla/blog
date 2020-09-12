@@ -1,7 +1,7 @@
 import React from 'react'
 import Prismic from 'prismic-javascript'
 import { Image, RichText, Date } from 'prismic-reactjs'
-import {Container, Row, Col, Card, Breadcrumb} from 'react-bootstrap'
+import {Container, Row, Col, Card, Breadcrumb, Badge} from 'react-bootstrap'
 import Moment from 'moment'
 import { client, linkResolver, hrefResolver } from '../../prismic-configuration'
 import Link from 'next/link'
@@ -31,6 +31,13 @@ const Blog = props => (
                   <small className="text-muted">{formattedDate}</small>
                   <p className="card-title">
                   {post.data.image.alt}
+                  </p>
+                  <p>
+                  {post.tags.map(tag => {
+                    return (
+                      <Badge className="mr-1" key={tag} pill variant="success">{tag}</Badge>
+                    );
+                  })}
                   </p>
                   {RichText.render(post.data.description)}
                 </Card.Text>
