@@ -38,7 +38,6 @@ const GetComments = (props) => {
                 <p className="commentor-name font-weight-bold">{comment.name}</p>
                 <small className="commented-date">{formattedDate}</small>
                 <p className="commentor-message">{comment.message}</p>
-                <hr />
               </div>
             );
           })
