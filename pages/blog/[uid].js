@@ -8,6 +8,8 @@ import Link from 'next/link'
 import Layout from '../../components/Layout'
 import Subscribe from '../../components/Subscribe'
 import Social from '../../components/Social'
+import GetComments from '../../components/GetComments'
+import PostComment from '../../components/PostComment'
 
 const Post = props =>{
   const date = Date(props.post.data.date);
@@ -68,6 +70,7 @@ const Post = props =>{
     </div>
     </Row>
     </Container>
+    <PostComment uid={props.post.uid} />
     </Layout>
   )
 }
@@ -80,5 +83,6 @@ Post.getInitialProps = async context => {
   }
   return { post }
 }
+
 
 export default Post

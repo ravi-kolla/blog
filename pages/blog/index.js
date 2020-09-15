@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import Prismic from 'prismic-javascript'
 import { Image, RichText, Date } from 'prismic-reactjs'
 import {Container, Row, Col, Card, Breadcrumb, Badge} from 'react-bootstrap'
@@ -11,6 +12,12 @@ import Album from '../photography'
 
 const Blog = props => (
     <Layout>
+    <Head>
+      <title>Ravi Teja Kolla Blog</title>
+      <meta name="title" content="Ravi Teja Kolla Blog" />
+      <meta name="description" content="This blog is managed by Ravi Teja" />
+      <meta name="keywords" content="Raviteja Blog, Ravi Teja Kolla Blog, Blog by Ravi Teja" />
+    </Head>
     <Container>
     <Breadcrumb className="blog-page mt-5">
       <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
