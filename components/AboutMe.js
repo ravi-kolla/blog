@@ -14,7 +14,7 @@ const AboutMe = () => (
       </div>
     </Col>
     <Col md={4} className="pb-3 pb-md-0">
-      <Image className="author-pic m-auto" src="/ravitejakolla.jpg" alt="Ravi Teja" roundedCircle />
+      <Image className="author-pic m-auto" src="/ravitejakolla.png" alt="Ravi Teja" roundedCircle />
     </Col>
   </Row>
 </div>
