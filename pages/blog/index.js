@@ -35,7 +35,7 @@ const Blog = props => (
               <Card.Img className="blog-image" variant="top" src={post.data.image.url} alt={post.data.image.alt} />
               <Card.Body>
                 <Card.Text>
-                  <small className="text-muted">{formattedDate}</small>
+                  <small>{formattedDate}</small>
                   <p className="card-title">
                   {post.data.image.alt}
                   </p>

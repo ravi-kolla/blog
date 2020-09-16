@@ -21,7 +21,7 @@ const Home = props => (
       <Row className="mt-5">
       <Container>
         <div className="pl-0">
-        <h5>Recent Posts</h5>
+        <h3>Recent Posts</h3>
         </div>
       </Container>
       {props.latestPosts.results.slice(0, 3).map(post => {
@@ -35,7 +35,7 @@ const Home = props => (
                   <Card.Img className="blog-image" variant="top" src={post.data.image.url} alt={post.data.image.alt} />
                   <Card.Body>
                     <Card.Text>
-                      <small className="text-muted">{formattedDate}</small>
+                      <small>{formattedDate}</small>
                       <p className="card-title">
                       {post.data.image.alt}
                       </p>
@@ -59,15 +59,15 @@ const Home = props => (
       <div className="mt-3">
       <Link href="/blog">
         <a>
-          <Button variant="primary">View all blog posts <FontAwesomeIcon icon="chevron-right" size="md" /></Button>
+          <Button variant="outline-dark">View all blog posts <FontAwesomeIcon icon="chevron-right" size="sm" /></Button>
         </a>
       </Link>
       </div>
       </Container>
-      <Container>
+      <Container className="projects-section">
       <Row className="mt-5">
       <Container>
-        <h5>Projects</h5>
+        <h3>Projects</h3>
       </Container>
       {props.projects.results.map(project => (
         <Col key={project.uid} md={6} lg={4} className="mt-3">

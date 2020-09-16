@@ -51,7 +51,7 @@ const Post = props =>{
                 imageAlt={props.post.data.image.alt}
         />
       </Row>
-      <small className="text-muted">{formattedDate}</small>
+      <small>{formattedDate}</small>
       <div className="mt-2 mb-3">
       <img src={props.post.data.image.url} alt={props.post.data.image.alt} />
       </div>

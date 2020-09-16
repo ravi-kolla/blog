@@ -9,7 +9,7 @@ const AboutMe = () => (
       <div>
         <h1>Hey, I’m Ravi.</h1>
       </div>
-      <h5>Software Engineer</h5>
+      <h2>Software Engineer</h2>
       <p>Experienced in developing full-stack web applications.</p>
       </div>
     </Col>

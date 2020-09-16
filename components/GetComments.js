@@ -26,7 +26,7 @@ const GetComments = (props) => {
   return (
     <>
     <div className="d-flex justify-content-center mt-2 mb-2">
-      <h5>Comments</h5>
+      <h3>Comments</h3>
     </div>
     <div>
         {!isLoading ? (
@@ -36,7 +36,7 @@ const GetComments = (props) => {
             return (
               <div className="comment-card card p-2 m-2" key={comment.uid}>
                 <p className="commentor-name font-weight-bold">{comment.name}</p>
-                <small className="commented-date">{formattedDate}</small>
+                <small>{formattedDate}</small>
                 <p className="commentor-message">{comment.message}</p>
               </div>
             );

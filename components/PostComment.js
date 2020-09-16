@@ -43,12 +43,12 @@ async function postComment(e) {
     <Row className="container">
     <div className="container col-md-8 m-auto pl-3 pr-3">
     <GetComments uid={props.uid} reloadComments={reloadComments} />
-    <h6>Leave a reply</h6>
+    <h4>Leave a reply</h4>
     <form  onSubmit={postComment}>
     <div className="form-group mb-2 mr-2">
       <textarea type="text" className="form-control"
             id="message" aria-describedby="message"
-            placeholder="Comment"
+            placeholder="Comment"  aria-label="enter your comment here"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
       />
@@ -57,15 +57,15 @@ async function postComment(e) {
         <div class="col">
             <input type="text" className="form-control"
                   id="name" aria-describedby="name"
-                  placeholder="Name"
+                  placeholder="Name"  aria-label="name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
             />
         </div>
         <div class="col">
             <input type="email" className="form-control"
-                  id="exampleInputEmail1" aria-describedby="emailHelp"
-                  placeholder="Email"
+                  id="InputEmail" aria-describedby="emailHelp"
+                  placeholder="Email" aria-label="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
             />

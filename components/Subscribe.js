@@ -31,12 +31,12 @@ function Subscribe() {
       <div className="form-group mb-2 mr-2">
         <input type="email" className="form-control"
               id="exampleInputEmail1" aria-describedby="emailHelp"
-              placeholder="Email"
+              placeholder="Email" aria-label="email-field"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
         />
       </div>
-      <button type="submit" className={`btn btn-primary mb-2 state=="LOADING" ? "btn-secondary" : ""`} disabled={state=="LOADING"} onClick={subscribe}>Subscribe</button>
+      <button type="submit" className={`btn btn-dark mb-2 state=="LOADING" ? "btn-secondary" : ""`} disabled={state=="LOADING"} onClick={subscribe}>Subscribe</button>
     </form>
     {state == "ERROR" && (
       <div className={`${alertState} alert alert-danger`} role="alert">
